@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  resources :events
+	#before_action :authenticate_user!
   def index
   end
 end
