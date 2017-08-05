@@ -10,7 +10,7 @@ gem 'ice_cube'
 gem 'bootstrap-sass'
 gem 'rspec'
 gem 'annotate'
-gem 'jquery'
+gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0'
 # Use postgresql as the database for Active Record

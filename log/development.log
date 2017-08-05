@@ -519,3 +519,1067 @@ Checked in these paths:
   
 app/assets/javascripts/application.js:12
 app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___608728427951655356_33289000'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 14:29:52 +0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 496ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/modus/fsjob2/calendar/app/assets/config
+  /home/modus/fsjob2/calendar/app/assets/images
+  /home/modus/fsjob2/calendar/app/assets/javascripts
+  /home/modus/fsjob2/calendar/app/assets/stylesheets
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/actioncable-5.1.2/lib/assets/compiled
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/actionview-5.1.2/lib/assets/compiled
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/modus/fsjob2/calendar/node_modules
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/modus/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/images):
+    4:     <title>Calendar</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:12
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2593370259057309848_27708920'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 14:32:32 +0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6103ms (Views: 6088.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-04 14:37:40 +0300
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 266ms (Views: 262.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-04 14:37:47 +0300
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 166ms (Views: 161.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-04 14:38:35 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007fb5a5be5ea8>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-08-04 14:46:00 +0300
+  
+ActionController::RoutingError (undefined method `before_filter' for EventsController:Class
+Did you mean?  before_action):
+  
+app/controllers/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/events_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-08-04 14:46:14 +0300
+  
+ActionController::RoutingError (undefined method `before_filter' for EventsController:Class
+Did you mean?  before_action):
+  
+app/controllers/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/events_controller.rb:1:in `<top (required)>'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 14:46:22 +0300
+  
+ActionController::RoutingError (undefined method `before_filter' for EventsController:Class
+Did you mean?  before_action):
+  
+app/controllers/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/events_controller.rb:1:in `<top (required)>'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:02:42 +0300
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (undefined method `before_filter' for EventsController:Class
+Did you mean?  before_action):
+  
+app/controllers/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/events_controller.rb:1:in `<top (required)>'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:04:03 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x000000052a0350>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:04:07 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 407ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007fcae1ca02e8>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:04:10 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 267ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007fcae07609f0>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:04:16 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007fcae1061d38>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:04:18 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x000000037917a8>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:15:16 +0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007efc54851bf8>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:15:21 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007efc5525c4e0>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:15:23 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x00000005192dc8>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:15:25 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x007efc54dbad88>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-04 15:16:16 +0300
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x000000034d6900>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-05 14:46:11 +0300
+  [1m[35m (36.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<EventsController:0x00000004c4a640>
+Did you mean?  authenticate_with_http_digest):
+  
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/events" for 127.0.0.1 at 2017-08-05 14:48:45 +0300
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 135ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-08-05 14:48:46 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (160.0ms)
+Completed 200 OK in 3605ms (Views: 3306.8ms | ActiveRecord: 102.1ms)
+
+
+Started GET "/user/sign_up" for 127.0.0.1 at 2017-08-05 15:00:30 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 262ms (Views: 255.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for 127.0.0.1 at 2017-08-05 15:00:59 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FM4ECuU2XGNEqQdIS+hEDLsZWzqpZZqYm95EBOqBOQa9cFf5r2pmjq/8ZaVFBlXQl/FEIRKzbMyn1qX7XjQrbg==", "user"=>{"email"=>"zempalata1@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (62.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "zempalata1@mail.ru"], ["LIMIT", 1]]
+  [1m[35mSQL (27.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "zempalata1@mail.ru"], ["encrypted_password", "$2a$11$1VRxsVVLOyu3eyVNKQSbrOWkkmd.TMZfDkozJDzFQepM2oxTWUtGG"], ["created_at", "2017-08-05 12:00:59.662312"], ["updated_at", "2017-08-05 12:00:59.662312"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-05 12:00:59.704597"], ["last_sign_in_at", "2017-08-05 12:00:59.704597"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", "2017-08-05 12:00:59.706535"], ["id", 1]]
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 612ms (ActiveRecord: 113.4ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-05 15:00:59 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 207ms (Views: 157.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-05 15:01:21 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 244ms (Views: 224.3ms | ActiveRecord: 2.4ms)
+
+
