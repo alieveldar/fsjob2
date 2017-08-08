@@ -13,6 +13,6 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
 //= require lib/moment
 //= require lib/fullcalendar
+//= require_tree .

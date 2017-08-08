@@ -5,4 +5,26 @@
   <%= submit_tag("Search", class: 'btn btn-primary')%>
 <% end %>
 
-<%= javascript_include_tag "fullcalendar" %>
+<div id='calendar'>
+	<%= javascript_tag do %>
+
+
+			$(document).ready(function() {
+			
+					$('#calendar').fullCalendar({
+						events: '/api/events/index',
+						header: {
+							left: 'prev,next today',
+							center: 'title',
+							right: 'month,basicWeek,basicDay'
+
+						}, navLinks: true
+						
+
+				});
+					
+						});
+
+
+<% end %>
+</div>

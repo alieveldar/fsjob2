@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :api do
+     resources :events
+  end
   resources :events
   #devise_for :users
   #get 'person/profile'

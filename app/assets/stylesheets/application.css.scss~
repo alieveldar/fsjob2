@@ -1,4 +1,0 @@
-@import "bootstrap";
-@import 'lib/moment';
-@import 'lib/fullcalendar';
-

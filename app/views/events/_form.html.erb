@@ -1,0 +1,49 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br />
+    <%= f.datetime_select :end%>
+  </div>
+  <div class="field">
+    <%= f.label :repeat_everyday %>
+    <%= f.radio_button(:repeat, "day") %>
+  </div>
+  <div class="field">
+    <%= f.label :repeat_everyweek %>
+    <%= f.radio_button(:repeat, "week") %>
+  </div>  
+  <div class="field">
+    <%= f.label :repeat_everymonth %>
+    <%= f.radio_button(:repeat, "month") %>
+  </div>
+  <div class="field">
+    <%= f.label :repeat_everyyear %>
+    <%= f.radio_button(:repeat, "year") %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
