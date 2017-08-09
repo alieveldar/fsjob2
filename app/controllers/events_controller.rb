@@ -1,8 +1,6 @@
 class EventsController < ApplicationController
   
-  def indexjson 
-    #@events = Event.all
-    #render :json => @events
+  def index 
   end
 
   def show
@@ -26,10 +24,10 @@ class EventsController < ApplicationController
       respond_to do |format|
     if @event.save
       format.html { redirect_to @event, :notice => 'Event was successfully created.' }
-      format.json { render :json => @event, :status => :created, :location => @event }
+      #format.json { render :json => @event, :status => :created, :location => @event }
     else
       format.html { render :action => "new" }
-      format.json { render :json => @event.errors, :status => :unprocessable_entity }
+      #format.json { render :json => @event.errors, :status => :unprocessable_entity }
     end
   end
 end

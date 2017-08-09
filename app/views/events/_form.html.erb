@@ -24,6 +24,10 @@
     <%= f.datetime_select :start %>
   </div>
   <div class="field">
+    <%= f.label :dont_repeat %>
+    <%= f.radio_button(:repeat, "false") %>
+  </div>
+  <div class="field">
     <%= f.label :repeat_everyday %>
     <%= f.radio_button(:repeat, "day") %>
   </div>
