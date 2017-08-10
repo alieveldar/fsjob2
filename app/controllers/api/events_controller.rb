@@ -1,6 +1,5 @@
 class Api::EventsController < ApplicationController
   respond_to :json
-  
   def index 	
   end
   def by_period(ev)
@@ -27,22 +26,20 @@ class Api::EventsController < ApplicationController
       @phantom_events = @phantom_events.select { |e| e["start"] >= params[:start] }
     end
 
-
-      
-      return @phantom_events
+    return @phantom_events
+  end
+  def all_events          
+    test_events = Event.where("start <= ?", params[:end])    
+    by_period(test_events)
+  end
+  def show   
+    events = all_events
+    events = events.map do |e| 
+      curl = {"url" => (event_path(e["id"]))}
+      e.merge(curl)
     end
-    def all_events          
-      test_events = Event.where("start <= ?", params[:end])    
-      by_period(test_events)
-    end
-    def show   
-      events = all_events
-      events = events.map do |e| 
-        curl = {"url" => (event_path(e["id"]))}
-        e.merge(curl)
-      end
-      render json: events
-    end
-  end 
+    render json: events
+  end
+end 
 
 
