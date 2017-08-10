@@ -1,27 +1,8 @@
-<p id="notice"><%= notice %></p>
+<h1>Event</h1>
+<% if @acces_user == true %>
+<%= render 'myevents' %>
+<% else %>
+<%= render 'allevents' %>
+<% end %>
 
-<p>
-  <b>Title:</b>
-  <%= @event.title %>
-</p>
-
-<p>
-  <b>Starts at:</b>
-  <%= @event.start %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @event.description %>
-</p>
-
-<p>
-  <b>Repeat:</b>
-  <%= @event.repeat %>
-</p>
-
-
-
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

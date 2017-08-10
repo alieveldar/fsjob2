@@ -1,9 +1,8 @@
 <h1>All events</h1>
-<%= form_tag("/search", method: "get") do %>
-<%= label_tag(:q, "Search for:") %>
-<%= text_field_tag(:q) %>
-<%= submit_tag("Search", class: 'btn btn-primary')%>
-<% end %>
+<div>
+<%= link_to "New event", new_event_path %>
+<%= link_to "log out", destroy_user_session_path, :method => :delete %>
+<%= link_to "Account", edit_user_registration_path %>
 
 <div id='calendar'>
 	<%= javascript_tag do %>
@@ -22,4 +21,5 @@
     });
 <%  end %>
 </div>
-<%= @test_events %>
+<%= @current_user %>
+
