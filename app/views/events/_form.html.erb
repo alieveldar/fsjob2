@@ -10,15 +10,16 @@
   </ul>
 </div>
 <% end %>
-
 <div class="field">
   <%= f.label :title %><br />
   <%= f.text_field :title %>
 </div>
+<br>
 <div class="field">
-  <%= f.label :description %>
-  <%= f.text_area :description %>
+  <%= f.label :description %><br>
+  <%= f.text_field :description %>
 </div>
+<br>
 <div class="field">
   <%= f.label :start %><br />
   <%= f.datetime_select :start %>
@@ -43,7 +44,10 @@
   <%= f.label :repeat_everyyear %>
   <%= f.radio_button(:repeat, "year") %>
 </div>
-<div class="actions">
-  <%= f.submit %>
 </div>
+<br>
+<div class="field">
+  <%= f.submit "OK", class: 'btn btn-primary' %>
 <% end %>
+
+

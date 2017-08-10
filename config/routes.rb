@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
-     resources :events
+    resources :events
   end
-  resources :events
-  #devise_for :users
-  #get 'person/profile'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'events#index'
-  devise_for :user
- # get 'persons/profile', as: 'user_root'
+  resources :events
+# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+root 'events#index'
+devise_for :user
 end
