@@ -11,6 +11,7 @@ class EventsController < ApplicationController
   def new
    @event = Event.new
    @current_user = current_user.id
+   @dont_repeat = nil
   end
 
   def edit
