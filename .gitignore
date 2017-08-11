@@ -1,6 +1,5 @@
-/test
-/temp
-/bin
-/log
-
+test
+temp
+log
+*.swp
 
