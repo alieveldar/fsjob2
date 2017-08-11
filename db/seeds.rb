@@ -8,19 +8,19 @@
 User.destroy_all
 Event.destroy_all
 testuser1 = User.create!(
-  email: "testuser1@test.com",
+  email: "testuser1@example.com",
   password: "12345678",
   username: "testuser1"
   )
 
 testuser2 = User.create!(
-  email: "testuser2@test.com",
+  email: "testuser2@example.com",
   password: "12345678",
   username: "testuser2"
   )
 
 testuser3 = User.create!(
-  email: "testuser3@test.com",
+  email: "testuser3@example.com",
   password: "12345678",
   username: "testuser3"
   )
