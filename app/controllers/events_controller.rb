@@ -54,11 +54,9 @@ class EventsController < ApplicationController
     redirect_to events_url
   end
 
-  def userevents
-    @current_user_name = current_user.username || current_user.email
-    @events = Event.where("user_id = ? ", current_user.id)
+  def preview
+    @events = Event.where("user_id = ?", current_user.id)
   end
-
 
   private
 

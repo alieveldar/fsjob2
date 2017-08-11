@@ -15,7 +15,7 @@
 #  last_sign_in_ip        :inet
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
-#  username               :string
+#  full_name              :string
 #
 
 class User < ApplicationRecord
