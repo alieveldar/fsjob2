@@ -44,10 +44,6 @@
   <%= f.label :repeat_everyyear %>
   <%= f.radio_button(:repeat, "year") %>
 </div>
-</div>
-<br>
-<div class="field">
   <%= f.submit "OK", class: 'btn btn-primary' %>
+  <%= link_to 'Back', events_path, class: 'btn btn-primary' %>
 <% end %>
-
-
