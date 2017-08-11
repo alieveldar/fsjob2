@@ -4,7 +4,7 @@ class Api::EventsController < ApplicationController
   end
   
   def show   
-    events = EventsController.all_events(params[:start], params[:end])
+    events = Event.all_events(params[:start], params[:end])
     events = events.map do |e| 
       curl = {"url" => (event_path(e["id"]))}
       e.merge(curl)

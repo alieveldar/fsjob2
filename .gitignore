@@ -1,0 +1,6 @@
+test
+tmp
+log
+*.swp
+config/database.yml
+
