@@ -42609,3 +42609,358 @@ Unpermitted parameter: :username
 Completed 200 OK in 378ms (Views: 93.8ms | ActiveRecord: 4.4ms)
 
 
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 22:42:06 +0300
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iFM4kb3tKOYG23oQ4LgstT7DBrkr/R/ceuoUjGv16VrCkMp9PBebeLbM507k3dE1eGcjkJhw94ErWQGs31a+pA==", "user"=>{"email"=>"testuser1@test.com1", "username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Unpermitted parameter: :username
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 1037ms (Views: 684.1ms | ActiveRecord: 15.8ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 22:42:24 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XOpw5WBO0PFqWLgPJevQZEfgO5uU7zObXunst3aQLjoWKYIJ4bRjb9pPJVEhji3kAUQesidi28YPWvmXwjN5xA==", "user"=>{"email"=>"testuser1@test.com1", "username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Unpermitted parameter: :username
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 273ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 22:42:25 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 121ms (Views: 114.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502480545555" for 127.0.0.1 at 2017-08-11 22:42:25 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502480545555", "id"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 151ms (Views: 29.8ms | ActiveRecord: 9.9ms)
+
+
+Started DELETE "/user/sign_out" for 127.0.0.1 at 2017-08-11 22:42:33 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LxxLojWwq20QY/unPfiA8FRIHVSOVPFjH3n8U/E2THVl37lOtEoY86B0Zvk5nX1wEuw4fT3ZGT5OyulzRZUbiw=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 22:42:33 +0300
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-08-11 22:42:33 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-11 22:42:43 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wkXL2IvFIimPq5JAf+t3hdw1LrLHoC/J35QDqEb8+ZKCLMXG/RBNvF/WLGzjlb/0oSh8+61xrax3GazFfITv/w==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (ActiveRecord: 2.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wkXL2IvFIimPq5JAf+t3hdw1LrLHoC/J35QDqEb8+ZKCLMXG/RBNvF/WLGzjlb/0oSh8+61xrax3GazFfITv/w==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 320ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-11 22:42:49 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"En3Aajmtbw7b18AdP3YWsqwF3mN0kFPRGrWr+q2hsz9SFM50T3gAmwuqfjGjCN7D0RiMKh5B0bSyOASXl9mlUg==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 19ms (ActiveRecord: 2.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"En3Aajmtbw7b18AdP3YWsqwF3mN0kFPRGrWr+q2hsz9SFM50T3gAmwuqfjGjCN7D0RiMKh5B0bSyOASXl9mlUg==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 376ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-11 22:42:54 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"taui0CiL6Bk03K6ZQsm6JlJC5TN+XSDbW60lO+eHmFr1wqzOXl6HjOShELXet3JXL1+3ehSMor7zIIpW3f+ONw==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 17ms (ActiveRecord: 2.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"taui0CiL6Bk03K6ZQsm6JlJC5TN+XSDbW60lO+eHmFr1wqzOXl6HjOShELXet3JXL1+3ehSMor7zIIpW3f+ONw==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 430ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-11 22:42:57 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DCgLG7jCeljZQ6Dj5619jhBHflHoaDgXCUKkbQSHZAFMQQUFzhcVzQk+Hs9707X/bVosGIK5unKhzwsAPv9ybA==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DCgLG7jCeljZQ6Dj5619jhBHflHoaDgXCUKkbQSHZAFMQQUFzhcVzQk+Hs9707X/bVosGIK5unKhzwsAPv9ybA==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 194ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-11 22:43:12 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ldNViccOyIseiVtiMy/Z4Qu/DnnEllyABI1HDd3lbs/VuluXsdunHs705U6vURGQdqJcMK5H3uWsAOhg5514og==", "user"=>{"email"=>"testuser2@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser2@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-08-11 19:43:13.253234"], ["last_sign_in_at", "2017-08-11 19:43:13.253234"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2017-08-11 19:43:13.254792"], ["id", 26]]
+  [1m[35m (19.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 339ms (ActiveRecord: 23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 22:43:13 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 99ms (Views: 89.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502480593606" for 127.0.0.1 at 2017-08-11 22:43:13 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502480593606", "id"=>"index"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 144ms (Views: 52.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-11 22:43:17 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 166ms (Views: 151.8ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 22:43:25 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rr9CHkNlxSCET1NJwsmmkJs4jcqftn9LhZkjNp5+njWdo7aRhIzoBrtuV/fbrVNTQ+xUdS9d9gkykE/btrvhJA==", "user"=>{"email"=>"testuser2@test.com", "username"=>"2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Unpermitted parameter: :username
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 353ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 22:43:26 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 154ms (Views: 138.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502480606951" for 127.0.0.1 at 2017-08-11 22:43:27 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502480606951", "id"=>"index"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 105ms (Views: 30.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-11 22:43:29 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 174ms (Views: 155.5ms | ActiveRecord: 5.4ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 22:43:45 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R1ZxRliytqI+3e3WaGBIP7WUoc7dkwMrZvAsFOwRHBacSoXJn1ubhAH86WhxBL38bUB4cW14imnR+UD5xNRjBw==", "user"=>{"email"=>"testuser2@test.com", "username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Unpermitted parameter: :username
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 364ms (Views: 94.0ms | ActiveRecord: 4.3ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 22:44:16 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gWKgYU2e31JLer/47mHeKPUFf5WHQoJF86l1xzP/FR6rxrfWXIORhjsnjJ8f8dacnZSqsA2J3iCsqBHrI+VmIg==", "user"=>{"email"=>"testuser2@test.com", "username"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Unpermitted parameter: :username
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 396ms (Views: 101.9ms | ActiveRecord: 4.2ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 22:44:41 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7dMLVd6fo6rArzKyWy56e5nKt9+/foYdkggypD6Yx7HHdxziz4LtfrDyAdWqvnLP8Vti+jW12njNCVaILoK0jQ==", "user"=>{"email"=>"testuser2@test.com", "username"=>"3", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Unpermitted parameter: :username
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 292ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 22:44:41 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 153ms (Views: 143.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502480682538" for 127.0.0.1 at 2017-08-11 22:44:42 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502480682538", "id"=>"index"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 103ms (Views: 30.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 23:07:36 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/modus/fsjob2/calendar/app/controllers/application_controller.rb:14: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:14: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/events_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-08-11 23:07:41 +0300
+  
+SyntaxError (/home/modus/fsjob2/calendar/app/controllers/application_controller.rb:14: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/application_controller.rb:14: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/events_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-08-11 23:08:47 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 939ms (Views: 868.1ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502482129113" for 127.0.0.1 at 2017-08-11 23:08:49 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502482129113", "id"=>"index"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mEvent Load (4.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 277ms (Views: 31.6ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-11 23:08:53 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 2.6ms)
+
+
+  
+NoMethodError (undefined method `зукьше' for #<Devise::ParameterSanitizer:0x000000039e8678>):
+  
+app/controllers/application_controller.rb:10:in `configure_permitted_parameters'
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-11 23:09:18 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (100.8ms)
+Completed 200 OK in 261ms (Views: 205.5ms | ActiveRecord: 9.2ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 23:11:39 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WAaKTftMwPiQdb4KrR47YkJPkAaqdEOUDFG18O78nIpyop366lGOLOAojW1cjjPWKt5FIyC/H/FTUNHc/ubvtg==", "user"=>{"email"=>"testuser2@test.com", "username"=>"t2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "username" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["username", "t2"], ["updated_at", "2017-08-11 20:11:39.660857"], ["id", 26]]
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 292ms (ActiveRecord: 34.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 23:11:39 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 103ms (Views: 96.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502482300075" for 127.0.0.1 at 2017-08-11 23:11:40 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502482300075", "id"=>"index"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 125ms (Views: 30.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-11 23:12:03 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 146ms (Views: 132.8ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-11 23:12:18 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EfiFwgYRG19ml/YUEJAd8CpZli9OQkWtCDKmm48awSbK5HFNwfg2eVm28qoJ9Ogz8o1PkP6pzO+/O8p2p9++Nw==", "user"=>{"email"=>"testuser2@tet.com", "username"=>"t2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "testuser2@tet.com"], ["id", 26], ["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["email", "testuser2@tet.com"], ["updated_at", "2017-08-11 20:12:18.623368"], ["id", 26]]
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-11 23:12:18 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 102ms (Views: 93.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502482338986" for 127.0.0.1 at 2017-08-11 23:12:19 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502482338986", "id"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 116ms (Views: 48.4ms | ActiveRecord: 1.7ms)
+
+
