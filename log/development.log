@@ -43952,3 +43952,1165 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 580ms (Views: 281.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-08-13 17:58:32 +0300
+Started GET "/" for 127.0.0.1 at 2017-08-13 17:58:32 +0300
+Started GET "/" for 127.0.0.1 at 2017-08-13 17:58:32 +0300
+  [1m[35m (32.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[35m (214.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[35m (223.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 104ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 117ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 167ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-08-13 17:58:35 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (119.7ms)
+Completed 200 OK in 2736ms (Views: 2521.5ms | ActiveRecord: 66.8ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 17:59:04 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B3I8vNlrvaRfqfnNIcPdlo1EXYHLypgyXIGP/Y4D4u7RXJIOgsL197jX3T5g1AT+ZfSK5eSEshc+h0aTriuSsw==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (50.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 79ms (ActiveRecord: 50.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B3I8vNlrvaRfqfnNIcPdlo1EXYHLypgyXIGP/Y4D4u7RXJIOgsL197jX3T5g1AT+ZfSK5eSEshc+h0aTriuSsw==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 535ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 17:59:11 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5NFkqJ3K8FuaOcbHC1vRnbfxb+AhsGbq+LJVAvYpWq8y/8oaxmO4CH1H4jRKTAj1X0G4hA7+TM+atJxs1gEq8g==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 34ms (ActiveRecord: 8.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5NFkqJ3K8FuaOcbHC1vRnbfxb+AhsGbq+LJVAvYpWq8y/8oaxmO4CH1H4jRKTAj1X0G4hA7+TM+atJxs1gEq8g==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 455ms (Views: 171.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 29]]
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 30]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mEvent Load (25.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 76]]
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 77]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 78]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 79]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 80]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 81]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 82]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 83]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 84]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 85]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 86]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 87]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testuser1@example.com"], ["LIMIT", 1]]
+  [1m[35mSQL (28.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "testuser1@example.com"], ["encrypted_password", "$2a$11$pl9rPOF/TRJFeCoWi8n3AuEZKZq8x6dk8rorXAJbHcUYheOg2IU3C"], ["created_at", "2017-08-13 14:59:33.682962"], ["updated_at", "2017-08-13 14:59:33.682962"], ["username", "testuser1"]]
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testuser2@example.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "testuser2@example.com"], ["encrypted_password", "$2a$11$xPXHcsLnNsAENKpDYY/6i.KV6iJYe0o6c6zjsmfs5z0lAK.u30T8G"], ["created_at", "2017-08-13 14:59:34.035472"], ["updated_at", "2017-08-13 14:59:34.035472"], ["username", "testuser2"]]
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testuser3@example.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "testuser3@example.com"], ["encrypted_password", "$2a$11$bf47AdteNAlL1mCQq1nbgum2F1KZCz53Zb6a6mtqw4j7iXKmeCXLi"], ["created_at", "2017-08-13 14:59:34.255288"], ["updated_at", "2017-08-13 14:59:34.255288"], ["username", "testuser3"]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (20.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser1 day"], ["start", "2017-08-13 14:59:34.263514"], ["description", "Event testuser1"], ["repeat", "day"], ["user_id", 31], ["created_at", "2017-08-13 14:59:34.265143"], ["updated_at", "2017-08-13 14:59:34.265143"]]
+  [1m[35m (19.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser1 week"], ["start", "2017-08-13 14:59:34.308061"], ["description", "Event testuser1"], ["repeat", "week"], ["user_id", 31], ["created_at", "2017-08-13 14:59:34.309693"], ["updated_at", "2017-08-13 14:59:34.309693"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser1 month"], ["start", "2017-08-13 14:59:34.319241"], ["description", "Event testuser1"], ["repeat", "month"], ["user_id", 31], ["created_at", "2017-08-13 14:59:34.320728"], ["updated_at", "2017-08-13 14:59:34.320728"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser1 year"], ["start", "2017-08-13 14:59:34.330371"], ["description", "Event testuser1"], ["repeat", "year"], ["user_id", 31], ["created_at", "2017-08-13 14:59:34.331895"], ["updated_at", "2017-08-13 14:59:34.331895"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser1 no repeat "], ["start", "2017-08-13 14:59:34.341454"], ["description", "Event testuser1"], ["repeat", ""], ["user_id", 31], ["created_at", "2017-08-13 14:59:34.343008"], ["updated_at", "2017-08-13 14:59:34.343008"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser2 day"], ["start", "2017-08-13 14:59:34.352593"], ["description", "Event testuser2 "], ["repeat", "day"], ["user_id", 32], ["created_at", "2017-08-13 14:59:34.354472"], ["updated_at", "2017-08-13 14:59:34.354472"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser2 week"], ["start", "2017-08-13 14:59:34.363791"], ["description", "Event testuser2 "], ["repeat", "week"], ["user_id", 32], ["created_at", "2017-08-13 14:59:34.365650"], ["updated_at", "2017-08-13 14:59:34.365650"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser2 month"], ["start", "2017-08-13 14:59:34.374848"], ["description", "Event testuser2 "], ["repeat", "month"], ["user_id", 32], ["created_at", "2017-08-13 14:59:34.376744"], ["updated_at", "2017-08-13 14:59:34.376744"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser2 year"], ["start", "2017-08-13 14:59:34.385964"], ["description", "Event testuser2 "], ["repeat", "year"], ["user_id", 32], ["created_at", "2017-08-13 14:59:34.387828"], ["updated_at", "2017-08-13 14:59:34.387828"]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser2 no repeat "], ["start", "2017-08-13 14:59:34.397046"], ["description", "Event testuser2 "], ["repeat", ""], ["user_id", 32], ["created_at", "2017-08-13 14:59:34.398895"], ["updated_at", "2017-08-13 14:59:34.398895"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser3 day"], ["start", "2017-08-13 14:59:34.408549"], ["description", "Event testuser3 "], ["repeat", "day"], ["user_id", 33], ["created_at", "2017-08-13 14:59:34.410684"], ["updated_at", "2017-08-13 14:59:34.410684"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser3 week"], ["start", "2017-08-13 14:59:34.419452"], ["description", "Event testuser3 "], ["repeat", "week"], ["user_id", 33], ["created_at", "2017-08-13 14:59:34.421302"], ["updated_at", "2017-08-13 14:59:34.421302"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser3 month"], ["start", "2017-08-13 14:59:34.430355"], ["description", "Event testuser3 "], ["repeat", "month"], ["user_id", 33], ["created_at", "2017-08-13 14:59:34.432252"], ["updated_at", "2017-08-13 14:59:34.432252"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser3 year"], ["start", "2017-08-13 14:59:34.441454"], ["description", "Event testuser3 "], ["repeat", "year"], ["user_id", 33], ["created_at", "2017-08-13 14:59:34.443335"], ["updated_at", "2017-08-13 14:59:34.443335"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Event testuser3 no repeat "], ["start", "2017-08-13 14:59:34.452517"], ["description", "Event testuser3 "], ["repeat", ""], ["user_id", 33], ["created_at", "2017-08-13 14:59:34.454443"], ["updated_at", "2017-08-13 14:59:34.454443"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-08-13 17:59:58 +0300
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (102.9ms)
+Completed 200 OK in 1070ms (Views: 977.7ms | ActiveRecord: 30.7ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 18:00:12 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7m3k0Wgo4y9JA42GqxLaVmXt8x48+nj9PwoZkmwJsis4Q0pjM4GrfK59qXXqBQM+jV0kehO0UthdDND8TCHCdg==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 33ms (ActiveRecord: 6.9ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7m3k0Wgo4y9JA42GqxLaVmXt8x48+nj9PwoZkmwJsis4Q0pjM4GrfK59qXXqBQM+jV0kehO0UthdDND8TCHCdg==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 361ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 18:00:18 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"00fD2ft8DjrDlZ86RrtzvYzpto/SVPXWXYPNDcPZ5nkFaW1roNVGaSTru8kHrKrVZFlh6/0a3/M/hQRj4/GWJA==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 20ms (ActiveRecord: 2.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"00fD2ft8DjrDlZ86RrtzvYzpto/SVPXWXYPNDcPZ5nkFaW1roNVGaSTru8kHrKrVZFlh6/0a3/M/hQRj4/GWJA==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 363ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 18:00:28 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9xWFjrO1Uv9SXAibvu+j1wac/YvuYksq40b7mKaDk7khOys86BwarLUiLGj/+Hq/7iwq78EsYQ+BQDL2hqvj5A==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 21ms (ActiveRecord: 3.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9xWFjrO1Uv9SXAibvu+j1wac/YvuYksq40b7mKaDk7khOys86BwarLUiLGj/+Hq/7iwq78EsYQ+BQDL2hqvj5A==", "user"=>{"email"=>"testuser1@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (9.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 613ms (Views: 281.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 18:01:09 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sjewjT/RoQGihFev26O/mc5ds0yad5yNobOfBBwZ5GxkGR4/ZHjpUkX6c1yatGbxJu1kKLU5tqjDtVZqPDGUMQ==", "user"=>{"email"=>"testuser1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser1@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-08-13 15:01:09.929166"], ["last_sign_in_at", "2017-08-13 15:01:09.929166"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2017-08-13 15:01:09.931362"], ["id", 31]]
+  [1m[35m (21.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 395ms (ActiveRecord: 25.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:01:10 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1119.3ms)
+Completed 500 Internal Server Error in 1156ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `preview_path' for #<#<Class:0x007f8714ecf868>:0x007f8714ec3248>
+Did you mean?  preview_event_path):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__2142208309278375346_70109074212460'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:02:46 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"preview", :controller=>"events"}, missing required keys: [:id]):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__2142208309278375346_70109081449860'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:06:41 +0300
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (778.6ms)
+Completed 500 Internal Server Error in 881ms (ActiveRecord: 13.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `preview_event_path' for #<#<Class:0x00000004f8ba98>:0x00000004f7ec58>
+Did you mean?  preview_events_path
+               preview_events_url
+               edit_event_path):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__724838535024384586_41707020'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:07:52 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (775.4ms)
+Completed 500 Internal Server Error in 850ms (ActiveRecord: 9.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `preview_event_path' for #<#<Class:0x000000046bd538>:0x000000046ac1e8>
+Did you mean?  edit_event_path):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb___887509381068858431_37089760'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:09:56 +0300
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (967.8ms)
+Completed 500 Internal Server Error in 1122ms (ActiveRecord: 37.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `preview_event_path' for #<#<Class:0x00000004bf9178>:0x00000004bf41c8>
+Did you mean?  edit_event_path):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb___4369820175751128030_39833580'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:41:21 +0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 9.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"preview", :controller=>"events"}, missing required keys: [:id]):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__1758814427848226230_38676940'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:41:26 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"preview", :controller=>"events"}, missing required keys: [:id]):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__1758814427848226230_37939360'
+Started GET "/" for 127.0.0.1 at 2017-08-13 18:43:34 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"preview", :controller=>"events"}, missing required keys: [:id]):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__1758814427848226230_37591000'
+Started GET "/" for 127.0.0.1 at 2017-08-13 19:04:33 +0300
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (786.6ms)
+Completed 500 Internal Server Error in 922ms (ActiveRecord: 24.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `preview_event_path' for #<#<Class:0x007f39a84fb058>:0x007f39a82e60d8>
+Did you mean?  edit_event_path):
+    1: <p class="text-info"><%= current_user.email %></p>
+    2: <div class='form-inline'>
+    3:   <%= link_to "My events", preview_event_path, class: 'btn btn-primary' %>
+    4:   <%= link_to "New event", new_event_path, class: 'btn btn-primary' %>
+    5:   <%= link_to "log out", destroy_user_session_path, :method => :delete, class: 'btn btn-primary' %>
+    6:   <%= link_to "Edit profile", edit_user_registration_path, class: 'btn btn-primary' %>
+  
+app/views/events/index.html.erb:3:in `_app_views_events_index_html_erb__3193410691464308242_69942806830880'
+Started GET "/" for 127.0.0.1 at 2017-08-13 19:05:50 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 829ms (Views: 809.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502640351996" for 127.0.0.1 at 2017-08-13 19:05:52 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502640351996", "id"=>"index"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 358ms (Views: 225.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:27:52 +0300
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 945ms (Views: 874.3ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652474423" for 127.0.0.1 at 2017-08-13 22:27:54 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652474423", "id"=>"index"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 181ms (Views: 38.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:27:57 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 31)[0m
+  Rendered events/my.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 137ms (Views: 121.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:28:07 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 127ms (Views: 115.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652474424" for 127.0.0.1 at 2017-08-13 22:28:07 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652474424", "id"=>"index"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 173ms (Views: 47.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652474425" for 127.0.0.1 at 2017-08-13 22:28:08 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652474425", "id"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 152ms (Views: 58.0ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/user/sign_out" for 127.0.0.1 at 2017-08-13 22:28:09 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7iLOJf+YMPcefVNUPTHLzm6YHZFlDisLR9QPKXSSgoKxWgQKAtjw5VKPsyrG0VVWQC5tTewzR/xwUZuxuKEmbg=="}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 214ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:28:09 +0300
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-08-13 22:28:09 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 123ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2017-08-13 22:28:28 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8mh/YpZ8h9HUmW5EpRBFAlVhNYaCPA3AoV489tG1EvGRp6Tz7+V/8BgLWjVNGaoCP0BJl5cCGqniSxdH1R+eew==", "user"=>{"email"=>"testuser2@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "testuser2@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-08-13 19:28:28.351400"], ["last_sign_in_at", "2017-08-13 19:28:28.351400"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2017-08-13 19:28:28.353457"], ["id", 32]]
+  [1m[35m (22.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 318ms (ActiveRecord: 28.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:28:28 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 146ms (Views: 135.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652508727" for 127.0.0.1 at 2017-08-13 22:28:28 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652508727", "id"=>"index"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 161ms (Views: 61.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:28:32 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 114ms (Views: 105.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:28:42 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 224ms (Views: 201.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652508728" for 127.0.0.1 at 2017-08-13 22:28:42 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652508728", "id"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 127ms (Views: 39.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652508729" for 127.0.0.1 at 2017-08-13 22:28:43 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652508729", "id"=>"index"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 169ms (Views: 40.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-08-13 22:28:48 +0300
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (79.9ms)
+  Rendered events/new.html.erb within layouts/application (84.5ms)
+Completed 200 OK in 210ms (Views: 192.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2017-08-13 22:28:53 +0300
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Z8bOmYV9/qoO/Ia9ondp42Ksglkdx4axoZM2Yf56oBK9GcCNeHUebry0MCplY0dMXxA9SSLC5V5I/Vn1NfV1Q==", "event"=>{"title"=>"lll", "description"=>"lllll", "start(1i)"=>"2017", "start(2i)"=>"8", "start(3i)"=>"13", "start(4i)"=>"22", "start(5i)"=>"28", "repeat"=>"day"}, "commit"=>"OK"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "start", "description", "repeat", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "lll"], ["start", "2017-08-13 19:28:00"], ["description", "lllll"], ["repeat", "day"], ["user_id", 32], ["created_at", "2017-08-13 19:28:53.897921"], ["updated_at", "2017-08-13 19:28:53.897921"]]
+  [1m[35m (55.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/events/103
+Completed 302 Found in 89ms (ActiveRecord: 58.7ms)
+
+
+Started GET "/events/103" for 127.0.0.1 at 2017-08-13 22:28:53 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (3.1ms)
+  Rendered events/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 134ms (Views: 104.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 22:28:57 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 149ms (Views: 124.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652534296" for 127.0.0.1 at 2017-08-13 22:28:57 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652534296", "id"=>"index"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 152ms (Views: 51.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:29:01 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 186ms (Views: 172.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:29:17 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 204ms (Views: 187.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652534297" for 127.0.0.1 at 2017-08-13 22:29:17 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652534297", "id"=>"index"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 182ms (Views: 51.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 22:30:16 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 204ms (Views: 126.1ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502652617502" for 127.0.0.1 at 2017-08-13 22:30:17 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502652617502", "id"=>"index"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 180ms (Views: 48.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:30:20 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 2.4ms)
+
+
+  
+NoMethodError (undefined method `finf' for #<Class:0x007f05340cf810>
+Did you mean?  find):
+  
+app/controllers/events_controller.rb:58:in `my'
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:30:28 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+Completed 404 Not Found in 85ms (ActiveRecord: 14.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=32):
+  
+app/controllers/events_controller.rb:58:in `my'
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:30:57 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 237ms (Views: 131.9ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:36:08 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."user_id" = $1 LIMIT $2[0m  [["user_id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  Rendered events/my.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 41.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Event:0x007f0530186e38>):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @events.each do |e| %>
+    16:       <tr>
+    17:         <td><%= e.title %></td>
+    18:         <td><%= e.description %></td>
+  
+app/views/events/my.html.erb:15:in `_app_views_events_my_html_erb__1226325911700481630_69830129232860'
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:36:54 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (98.1ms)
+Completed 200 OK in 472ms (Views: 240.8ms | ActiveRecord: 51.7ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 22:44:22 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 228ms (Views: 204.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:56:36 +0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 806ms (Views: 726.5ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/events/93" for 127.0.0.1 at 2017-08-13 23:56:45 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (11.1ms)
+  Rendered events/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 291ms (Views: 259.0ms | ActiveRecord: 5.4ms)
+
+
+Started DELETE "/events/93" for 127.0.0.1 at 2017-08-13 23:56:48 +0300
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RHeIXhOoxBv9pLdxECKPfOxnAr80trR8dbN3aEwpDUNkQliXpkFHgKNNhE6v4bQAKm73rcvwNCEG8Ib6yRnXHQ==", "id"=>"93"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  [1m[35mSQL (16.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 93]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 37ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:56:48 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 127ms (Views: 116.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657809291" for 127.0.0.1 at 2017-08-13 23:56:49 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657809291", "id"=>"index"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 140ms (Views: 40.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:56:52 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 263ms (Views: 236.6ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/events/94" for 127.0.0.1 at 2017-08-13 23:56:54 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"94"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (10.6ms)
+  Rendered events/show.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 258ms (Views: 228.5ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/events/94" for 127.0.0.1 at 2017-08-13 23:56:57 +0300
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tW2nqAKfeL/65MGbDRwuI4oslz8PeODJK3EAxxt9YRGVWHdht3b7JKQN8qSy3xVfTCViLfA+YJRYMvFVnk27Tw==", "id"=>"94"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  [1m[35mSQL (14.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 94]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 30ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:56:57 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 134ms (Views: 124.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657818061" for 127.0.0.1 at 2017-08-13 23:56:58 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657818061", "id"=>"index"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 180ms (Views: 44.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:56:59 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (2.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 262ms (Views: 239.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/events/97" for 127.0.0.1 at 2017-08-13 23:57:00 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (11.0ms)
+  Rendered events/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 260ms (Views: 232.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/events/97/edit" for 127.0.0.1 at 2017-08-13 23:57:02 +0300
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (255.1ms)
+  Rendered events/edit.html.erb within layouts/application (262.3ms)
+Completed 200 OK in 414ms (Views: 384.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:57:04 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 264ms (Views: 244.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657818062" for 127.0.0.1 at 2017-08-13 23:57:05 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657818062", "id"=>"index"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 135ms (Views: 40.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657818063" for 127.0.0.1 at 2017-08-13 23:57:05 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657818063", "id"=>"index"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 116ms (Views: 42.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:57:07 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 139ms (Views: 129.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/events/96" for 127.0.0.1 at 2017-08-13 23:57:09 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (8.9ms)
+  Rendered events/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 217ms (Views: 182.9ms | ActiveRecord: 4.2ms)
+
+
+Started DELETE "/events/96" for 127.0.0.1 at 2017-08-13 23:57:12 +0300
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+f/SwqFMP+luhsi7s1RabF+Q0qa4qsPJlMI60GqbJC3ZygILFKW8cjBv+4QMl2EQmZkntEfsQ5TngctC76v+cw==", "id"=>"96"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  [1m[35mSQL (20.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 96]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 36ms (ActiveRecord: 22.4ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:57:12 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 110ms (Views: 101.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657832843" for 127.0.0.1 at 2017-08-13 23:57:12 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657832843", "id"=>"index"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 146ms (Views: 38.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:57:15 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 130ms (Views: 109.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/events/95" for 127.0.0.1 at 2017-08-13 23:57:17 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (10.2ms)
+  Rendered events/show.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 227ms (Views: 193.7ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/events/95" for 127.0.0.1 at 2017-08-13 23:57:19 +0300
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SmZeDymaT/Ip+CoH5XSZCsSTJ1cQvnbPip/Dny4EhddqU47GnHPMaXcRGThat6J2AprSRe/49pL53DINqzRfiQ==", "id"=>"95"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  [1m[35mSQL (19.1ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 95]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 49ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:57:20 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 140ms (Views: 129.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657840320" for 127.0.0.1 at 2017-08-13 23:57:20 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657840320", "id"=>"index"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 137ms (Views: 39.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2017-08-13 23:57:22 +0300
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (20.2ms)
+  Rendered events/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 131ms (Views: 118.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:57:24 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 134ms (Views: 116.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657840321" for 127.0.0.1 at 2017-08-13 23:57:24 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657840321", "id"=>"index"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 133ms (Views: 40.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657840322" for 127.0.0.1 at 2017-08-13 23:57:24 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657840322", "id"=>"index"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 108ms (Views: 42.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:57:26 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 269ms (Views: 244.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/events/97" for 127.0.0.1 at 2017-08-13 23:57:28 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (10.4ms)
+  Rendered events/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 226ms (Views: 198.7ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/events/97" for 127.0.0.1 at 2017-08-13 23:57:30 +0300
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"u9OMu7KHV6E90Ho72eT1TwUyqhJEFmTfQIdR0ApzACSb5lxyB27UOmM5SQRmJ84zwztfALtQ5IIzxKBCj0Paeg==", "id"=>"97"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  [1m[35mSQL (14.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 97]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 36ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:57:31 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 167ms (Views: 151.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657851293" for 127.0.0.1 at 2017-08-13 23:57:31 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657851293", "id"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 121ms (Views: 38.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/events/my" for 127.0.0.1 at 2017-08-13 23:57:35 +0300
+Processing by EventsController#my as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/my.html.erb within layouts/application
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (user_id = 32)[0m
+  Rendered events/my.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 143ms (Views: 129.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/events/103" for 127.0.0.1 at 2017-08-13 23:57:36 +0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"103"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/_myevents.html.erb (6.7ms)
+  Rendered events/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 198ms (Views: 171.5ms | ActiveRecord: 4.0ms)
+
+
+Started DELETE "/events/103" for 127.0.0.1 at 2017-08-13 23:57:39 +0300
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zjfev7KV4QzV8CTMso8dNUqIt4aO0Wad+b17aFkoFhDuAg52B3xil4sZF/MNTCZJjIFClHGX5sCK/or63BjMTg==", "id"=>"103"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  [1m[35mSQL (19.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 103]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 50ms (ActiveRecord: 23.3ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2017-08-13 23:57:39 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 189ms (Views: 170.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657860029" for 127.0.0.1 at 2017-08-13 23:57:40 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657860029", "id"=>"index"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 81ms (Views: 27.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-13 23:57:55 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 159ms (Views: 144.5ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/user" for 127.0.0.1 at 2017-08-13 23:58:03 +0300
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q7KkW6IUCJU0X3cxtCCSjyFn73CK2CA3vem0Yd5U2aapRFaMK1tf14beZeJytA7f63knkhqiEy11QdkT7LMqiw==", "user"=>{"email"=>"testuser2@example.com", "username"=>"testuser23", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "username" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["username", "testuser23"], ["updated_at", "2017-08-13 20:58:03.476632"], ["id", 32]]
+  [1m[35m (22.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 326ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 23:58:03 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 119ms (Views: 112.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657883846" for 127.0.0.1 at 2017-08-13 23:58:03 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657883846", "id"=>"index"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 112ms (Views: 27.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2017-08-13 23:58:09 +0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 127ms (Views: 110.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 23:58:13 +0300
+Processing by EventsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 122ms (Views: 115.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657883847" for 127.0.0.1 at 2017-08-13 23:58:13 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657883847", "id"=>"index"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 96ms (Views: 29.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/events/index?start=2017-07-30&end=2017-09-10&_=1502657883848" for 127.0.0.1 at 2017-08-13 23:58:14 +0300
+Processing by Api::EventsController#show as JSON
+  Parameters: {"start"=>"2017-07-30", "end"=>"2017-09-10", "_"=>"1502657883848", "id"=>"index"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE (start <= '2017-09-10')[0m
+Completed 200 OK in 93ms (Views: 33.2ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/user/sign_out" for 127.0.0.1 at 2017-08-13 23:58:14 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WSIR4NAErKU54yVVAV610TQCtLu4VDQenUJBa2pRD3p5F8EpZe0vPmcKFmq+nY6t8gtBqUcStEPuAbD572HVJA=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-13 23:58:14 +0300
+Processing by EventsController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2017-08-13 23:58:14 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 125ms (Views: 122.4ms | ActiveRecord: 0.0ms)
+
+

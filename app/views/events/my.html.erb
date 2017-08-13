@@ -13,13 +13,13 @@
 
   <tbody>
     <% @events.each do |e| %>
-    <tr>
-      <td><%= e.title %></td>
-      <td><%= e.description %></td>
-      <td><%= e.start %></td>
-      <td><%= e.repeat %></td>
-      <td><%= link_to 'Show', event_path(e.id), class: 'btn btn-primary' %></td>
-    </tr>
+      <tr>
+        <td><%= e.title %></td>
+        <td><%= e.description %></td>
+        <td><%= e.start %></td>
+        <td><%= e.repeat %></td>
+        <td><%= link_to 'Show', event_path(e.id), class: 'btn btn-primary' %></td>
+      </tr>
     <% end %>
   </tbody>
 </table>

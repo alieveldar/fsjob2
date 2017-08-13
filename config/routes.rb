@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
+  root 'events#index' 
+  
+  devise_for :user
+  
+  resources :events do 
+    collection do 
+      get :my
+    end
+  end
+  
   namespace :api do
     resources :events
-  end
-
-  resources :events
-# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-root 'events#index'
-devise_for :user
-get 'preview', to: 'events#preview'
+  end 
 end

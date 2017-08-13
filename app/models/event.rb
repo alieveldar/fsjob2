@@ -13,7 +13,7 @@
 #
 
 class Event < ApplicationRecord
-	class << self
+  class << self
     def by_period(events, start, stop)
       steps = {"day" => 1.day, "week" => 1.week, "month" => 1.month, "year" => 1.year}
       phantom_events = []
